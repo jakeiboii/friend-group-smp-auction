@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Group SMP — Auction History</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Friend Group SMP</h1>
+  <p>Auction History</p>
+</header>
+
+<main>
+  <section class="items">
+
+    <div class="item-card" onclick="showItem('emerald')">
+      <img src="images/deepslate_emerald_ore.png">
+      <h3>Deepslate Emerald Ore</h3>
+      <span>$890</span>
+    </div>
+
+    <div class="item-card" onclick="showItem('music')">
+      <img src="images/creator_music_box.png">
+      <h3>Creator Music Box</h3>
+      <span>$1,200</span>
+    </div>
+
+    <div class="item-card" onclick="showItem('reinforced')">
+      <img src="images/reinforced_deepslate.png">
+      <h3>Reinforced Deepslate</h3>
+      <span>$9,000</span>
+    </div>
+
+    <div class="item-card" onclick="showItem('head')">
+      <img src="images/player_head.png">
+      <h3>Player Head</h3>
+      <span>$20,000</span>
+    </div>
+
+  </section>
+
+  <section class="chart-section">
+    <h2 id="itemTitle">Select an item</h2>
+    <canvas id="priceChart"></canvas>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
